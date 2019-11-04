@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
-import "../styles/MyNavBar.css";
+import "../styles/MyNavBar.scss";
 
 const MyNavBar = () => {
   return (
