@@ -4,7 +4,7 @@ import "../styles/MyNavBar.scss";
 
 const MyNavBar = () => {
   return (
-    <header>
+    <header className="navbar-header">
       <Navbar expand="sm">
         <NavbarBrand href="/">VBB Journeys</NavbarBrand>
       </Navbar>
