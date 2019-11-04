@@ -8,7 +8,8 @@
     "react-dom": "^16.11.0",
     "react-fuzzy-search": "^0.4.0",
     "react-scripts": "3.2.0",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "vbb-stations": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
