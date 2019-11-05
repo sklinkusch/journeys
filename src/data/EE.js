@@ -114,6 +114,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Lindena,") ||
     stop.name.startsWith("Lindthal,") ||
     stop.name === "Löhsten" ||
+    stop.name.startsWith("Löhsten,") ||
     stop.name === "Lönnewitz" ||
     stop.name.startsWith("Lugau,") ||
     stop.name.startsWith("Maasdorf,") ||
@@ -157,6 +158,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Rothstein,") ||
     stop.name.startsWith("Rückersdorf,") ||
     stop.name === "Saathain" ||
+    stop.name.startsWith("Saathain,") ||
     stop.name.startsWith("Sallgast,") ||
     stop.name.startsWith("Saxdorf,") ||
     stop.name === "Schacksdorf" ||
@@ -202,5 +204,6 @@ const stops = stopsUnsorted.filter(
 );
 
 const remainingStops = stopsUnsorted.filter(stop => stops.indexOf(stop) === -1);
+// console.log(`after EE: ${remainingStops.length}`);
 
 export { stops, remainingStops };

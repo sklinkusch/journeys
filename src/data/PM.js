@@ -273,5 +273,6 @@ const stops = remainingAfterStations.filter(
 const remainingStops = remainingAfterStations.filter(
   stop => stops.indexOf(stop) === -1
 );
+// console.log(`after PM: ${remainingStops.length}`);
 
 export { stations, stops, remainingStops };

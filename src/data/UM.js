@@ -375,5 +375,6 @@ const stops = stopsUnsorted.filter(
 );
 
 const remainingStops = stopsUnsorted.filter(stop => stops.indexOf(stop) === -1);
+// console.log(`after UM: ${remainingStops.length}`);
 
 export { stops, remainingStops };

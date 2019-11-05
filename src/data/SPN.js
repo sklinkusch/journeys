@@ -173,5 +173,6 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Zschorno,")
 );
 const remainingStops = stopsUnsorted.filter(stop => stops.indexOf(stop) === -1);
+// console.log(`after SPN: ${remainingStops.length}`);
 
 export { stops, remainingStops };

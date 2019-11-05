@@ -130,7 +130,7 @@ const stops = remainingAfterStations.filter(
     stop.name === "Karlsbiese" ||
     stop.name.startsWith("Karlsdorf (MOL)") ||
     stop.name === "Karlshof (bei Gusow)" ||
-    stop.name === "Karlshof (bei Neulewin)" ||
+    stop.name === "Karlshof (Neulewin)" ||
     stop.name === "Katharinenhof" ||
     stop.name === "Kerstenbruch" ||
     stop.name.startsWith("Kerstenbruch,") ||
@@ -243,5 +243,6 @@ const stops = remainingAfterStations.filter(
 const remainingStops = remainingAfterStations.filter(
   stop => stops.indexOf(stop) === -1
 );
+// console.log(`after MOL: ${remainingStops.length}`);
 
 export { stations, stops, remainingStops };

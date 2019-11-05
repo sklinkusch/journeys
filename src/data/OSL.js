@@ -81,6 +81,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Krimnitz,") ||
     stop.name.startsWith("Kroppen,") ||
     stop.name.startsWith("Laasow,") ||
+    stop.name.startsWith("Lauchhammer,") ||
     stop.name.startsWith("Lauchhammer Mitte,") ||
     stop.name.startsWith("Lauchhammer Ost,") ||
     stop.name.startsWith("Lauchhammer Süd,") ||
@@ -161,5 +162,6 @@ const stops = stopsUnsorted.filter(
     stop.name === "Zwietow"
 );
 const remainingStops = stopsUnsorted.filter(stop => stops.indexOf(stop) === -1);
+// console.log(`after OSL: ${remainingStops.length}`);
 
 export { stops, remainingStops };

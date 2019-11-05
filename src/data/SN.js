@@ -21,6 +21,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Döbeln,") ||
     stop.name.startsWith("Doberschütz,") ||
     stop.name === "Döbrichau" ||
+    stop.name.startsWith("Döbrichau,") ||
     stop.name.startsWith("Dresden,") ||
     stop.name.startsWith("Dresden-") ||
     stop.name.startsWith("Eilenburg,") ||
@@ -41,6 +42,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Jesewitz (bei Leipzig)") ||
     stop.name === "Klitten" ||
     stop.name.startsWith("Kodersdorf,") ||
+    stop.name.startsWith("Kreischau,") ||
     stop.name === "Kubschütz" ||
     stop.name === "Kühren" ||
     stop.name.startsWith("Lampertswalde,") ||

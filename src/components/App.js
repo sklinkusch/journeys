@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/App.scss";
 import MyNavBar from "./MyNavBar";
 import Search from "./Search";
+import stops from "../data/stops";
 
 function App() {
   return (

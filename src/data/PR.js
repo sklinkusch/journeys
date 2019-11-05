@@ -281,5 +281,6 @@ const stops = stopsUnsorted.filter(
     stop.name === "Zwischendeich"
 );
 const remainingStops = stopsUnsorted.filter(stop => stops.indexOf(stop) === -1);
+// console.log(`after PR: ${remainingStops.length}`);
 
 export { stops, remainingStops };

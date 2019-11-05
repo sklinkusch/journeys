@@ -263,5 +263,6 @@ const stops = stopsUnsorted.filter(
     stop.name === "Zühlen"
 );
 const remainingStops = stopsUnsorted.filter(stop => stops.indexOf(stop) === -1);
+// console.log(`after OPR: ${remainingStops.length}`);
 
 export { stops, remainingStops };

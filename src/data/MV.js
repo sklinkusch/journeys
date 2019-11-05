@@ -39,6 +39,7 @@ const stops = stopsUnsorted.filter(
     stop.name === "Groß Brütz" ||
     stop.name.startsWith("Groß Kiesow,") ||
     stop.name.startsWith("Groß Laasch,") ||
+    stop.name.startsWith("Groß Quassow,") ||
     stop.name.startsWith("Güstrow,") ||
     stop.name.startsWith("Hagenow,") ||
     stop.name.startsWith("Hagenow Land,") ||
@@ -81,6 +82,7 @@ const stops = stopsUnsorted.filter(
     stop.name === "Pasewalk Ost" ||
     stop.name === "Peenemünde" ||
     stop.name === "Plaaz" ||
+    stop.name.startsWith("Plaaz,") ||
     stop.name === "Plate(Meckl)" ||
     stop.name === "Plüschow" ||
     stop.name === "Priemerburg" ||
@@ -108,6 +110,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Strohkirchen,") ||
     stop.name.startsWith("Stubbenfelde,") ||
     stop.name === "Sukow(b Schwerin)" ||
+    stop.name.startsWith("Sülstorf ") ||
     stop.name.startsWith("Sülstorf,") ||
     stop.name === "Teterow" ||
     stop.name === "Torgelow" ||
@@ -122,6 +125,8 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Waren (Müritz)") ||
     stop.name.startsWith("Warnemünde,") ||
     stop.name === "Warnemünde Werft" ||
+    stop.name === "Weißer See, Bahnhof" ||
+    stop.name.startsWith("Wesenberg,") ||
     stop.name.startsWith("Wismar,") ||
     stop.name.startsWith("Wittenhagen,") ||
     stop.name.startsWith("Woldegk,") ||
@@ -132,6 +137,7 @@ const stops = stopsUnsorted.filter(
     stop.name.startsWith("Zempin,") ||
     stop.name.startsWith("Zerrenthin,") ||
     stop.name.startsWith("Zinnowitz,") ||
+    stop.name.startsWith("Zirtow-Leussow,") ||
     stop.name.startsWith("Züssow,")
 );
 

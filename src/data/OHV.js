@@ -9,7 +9,8 @@ const stations = stopsUnsorted.filter(
     stop.name.startsWith("S Birkenwerder") ||
     stop.name.startsWith("S Borgsdorf") ||
     stop.name.startsWith("S Lehnitz") ||
-    stop.name === "S Oranienburg Bhf"
+    stop.name === "S Oranienburg Bhf" ||
+    stop.name.startsWith("S Hennigsdorf")
 );
 const remainingAfterStations = stopsUnsorted.filter(
   stop => stations.indexOf(stop) === -1
@@ -165,5 +166,6 @@ const stops = remainingAfterStations.filter(
 const remainingStops = remainingAfterStations.filter(
   stop => stops.indexOf(stop) === -1
 );
+// console.log(`after OHV: ${remainingStops.length}`);
 
 export { stations, stops, remainingStops };

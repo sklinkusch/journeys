@@ -3,9 +3,10 @@ import stopsUnsorted from "./unsorted";
 // get all stops from Berlin
 const stopsFilter = stopsUnsorted.filter(
   stop =>
+    stop.name.startsWith("Berlin,") ||
     stop.name.includes("(Berlin)") ||
     stop.name.includes("(Bln)") ||
-    stop.name.startsWith("Berlin Hauptbahnhof") ||
+    stop.name.includes("Berlin Hauptbahnhof") ||
     stop.name === "U Stadtmitte/Krausenstr." ||
     stop.name === "U Alexanderplatz [Bus]" ||
     stop.name === "S Rahnsdorf [Tram]"
@@ -28,4 +29,5 @@ const stops = stopsFilter.map(stop => {
 export const remainingStops = stopsUnsorted.filter(
   stop => stopsFilter.indexOf(stop) === -1
 );
+// console.log(`after B: ${remainingStops.length}`);
 export default stops;
