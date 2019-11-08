@@ -1,6 +1,15 @@
 import React from "react";
+import FuzzySearch from "react-fuzzy";
+import "../styles/Search.scss";
 
-const Search = () => {
+const styles = {
+  proposal: {
+    backgroundColor: "antiquewhite",
+    color: "darkblue",
+  },
+};
+
+const Search = props => {
   const addLeadingZero = input => {
     return input < 10 ? `0${input}` : `${input}`;
   };
@@ -18,6 +27,8 @@ const Search = () => {
       return `${date.getFullYear()}-12-${day}T23:59`;
     }
   };
+  const { stops, setFrom } = props;
+
   const dateNow = new Date();
   const day = addLeadingZero(dateNow.getDate());
   const month = addLeadingZero(dateNow.getMonth() + 1);
@@ -28,7 +39,24 @@ const Search = () => {
   const maxDate = getMaxDate(dateNow);
   return (
     <form method="GET">
-      <input type="text" placeholder="start" name="from" />
+      <FuzzySearch
+        list={stops}
+        keys={["name"]}
+        width={430}
+        threshold={0.1}
+        onSelect={() => console.log("Selected")}
+        resultsTemplate={(props, state, clickHandler) =>
+          state.results.map((val, i) => (
+            <div
+              key={i}
+              style={styles.proposal}
+              onClick={() => setFrom({ id: val.id, name: val.name })}
+            >
+              {val.name}
+            </div>
+          ))
+        }
+      />
       <input type="text" placeholder="stop" name="to" />
       <input
         type="datetime-local"
